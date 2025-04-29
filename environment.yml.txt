@@ -1,0 +1,19 @@
+name: deepxplore_env
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - pytorch=2.0.0
+  - torchvision=0.15.0
+  - cudatoolkit=11.8  # CUDA 사용 시, CPU만 사용한다면 이 줄 제거
+  - numpy=1.23.5
+  - matplotlib=3.7.1
+  - pillow=9.4.0
+  - scikit-learn=1.2.2
+  - seaborn=0.12.2
+  - jupyterlab=3.6.3  # 노트북 환경에서 실행하고 싶은 경우
+  - pip=23.0.1
+  - pip:
+    - tqdm==4.65.0
